@@ -5,10 +5,17 @@
  */
 package tests;
 
+import org.junit.Test;
+
+
 /**
  *
  * @author terriBoose
  */
 public class MRBloomTest {
     
+    @Test
+    public void MRBloomTest1 () {
+        
+    }
 }

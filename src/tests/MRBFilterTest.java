@@ -5,10 +5,16 @@
  */
 package tests;
 
+import org.junit.Test;
+
 /**
  *
  * @author terriBoose
  */
 public class MRBFilterTest {
     
+    @Test
+    public void MRBFilterTest1 () {
+        
+    }
 }

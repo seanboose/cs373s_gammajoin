@@ -5,10 +5,16 @@
  */
 package tests;
 
+import org.junit.Test;
+
 /**
  *
  * @author terriBoose
  */
 public class BFilterTest {
     
+    @Test
+    public void BFilterTest () {
+        
+    }
 }

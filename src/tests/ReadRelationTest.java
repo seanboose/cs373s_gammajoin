@@ -5,10 +5,16 @@
  */
 package tests;
 
+import org.junit.Test;
+
 /**
  *
  * @author terriBoose
  */
 public class ReadRelationTest {
     
+    @Test
+    public void ReadRelationTest1 () {
+        
+    }
 }

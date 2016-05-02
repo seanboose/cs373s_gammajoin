@@ -5,10 +5,16 @@
  */
 package tests;
 
+import org.junit.Test;
+
 /**
  *
  * @author terriBoose
  */
 public class GammaTest {
     
+    @Test
+    public void GammaTest1 () {
+        
+    }
 }

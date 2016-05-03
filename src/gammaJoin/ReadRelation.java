@@ -65,7 +65,7 @@ public class ReadRelation extends Thread {
             // Parse rows into records
             while(true) {
                 input = in.readLine();
-                if(input == null){
+                if(input == null || input.equals("")){
                     // No more data to consume
                     break;
                 }
@@ -75,7 +75,7 @@ public class ReadRelation extends Thread {
             out.close();
         }
         catch (IOException e){
-            ReportError.msg(this.getClass().getName() + e);
+            Logger.getLogger(ReadRelation.class.getName()).log(Level.SEVERE, null, e);
         } catch (Exception ex) {
             Logger.getLogger(ReadRelation.class.getName()).log(Level.SEVERE, null, ex);
         }

@@ -25,7 +25,7 @@ public class ReadRelationTest {
     public void ReadRelationTest1 () throws Exception{
         
         String in = inDir+"client.txt";
-        String out = outDir+"out.txt";
+        String out = outDir+"readRelationOut.txt";
         String correct = correctDir+"readRelationTest1.txt";
         
         Utility.redirectStdOut(out);

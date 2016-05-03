@@ -70,27 +70,4 @@ public class HJoin extends Thread{
         }
         
     }
-    
-//    public void run() {
-//        try {
-//            String input;
-//            Tuple t;
-//            // Parse rows into records
-//            while(true) {
-//                input = in.readLine();
-//                if(input == null){
-//                    // No more data to consume
-//                    break;
-//                }
-//                t = makeTupleFromFileData(r, input);
-//                out.putNextTuple(t);
-//            }
-//            out.close();
-//        }
-//        catch (IOException e){
-//            Logger.getLogger(ReadRelation.class.getName()).log(Level.SEVERE, null, e);
-//        } catch (Exception ex) {
-//            Logger.getLogger(ReadRelation.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
 }

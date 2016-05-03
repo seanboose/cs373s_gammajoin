@@ -1,0 +1,5 @@
+CLIENTNO FNAME    LNAME      TELNO           PREFTYPE MAXRENT                
+-------- -------- ---------- --------------- -------- ---------------------- 
+fake74   Mike     Richie     01475-392178    House    750                    
+fake62   Mary     Tregear    01224-196720    Flat     600    
+

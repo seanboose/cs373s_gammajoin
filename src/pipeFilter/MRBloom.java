@@ -33,7 +33,7 @@ public class MRBloom extends Thread {
         in = c_in.getReadEnd();
         out = in_hsplit.getWriteEnd();
         
-        HSplit hsplit = new HSplit(in_hsplit, hsplit_bloom);
+        HSplit hsplit = new HSplit(in_hsplit, hsplit_bloom, jk);
         Bloom[] bloom = new Bloom[splits];
         for(int i=0; i<splits; ++i){
             bloom[i] = new Bloom(hsplit_bloom[i], jk, bloom_a_merge[i], bloom_m_merge[i]);

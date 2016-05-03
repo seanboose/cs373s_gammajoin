@@ -18,8 +18,9 @@ public class HSplit extends Thread{
     
     private ReadEnd in;
     private WriteEnd[] outs;
+    private int index;
     
-    public HSplit (Connector c_in, Connector[] c_outs) {
+    public HSplit (Connector c_in, Connector[] c_outs, int key) {
         
         in = c_in.getReadEnd();
         
@@ -29,6 +30,8 @@ public class HSplit extends Thread{
             c_outs[i].setRelation(c_in.getRelation());
         }
         
+        index = key;
+        
         ThreadList.add(this);
     }
     
@@ -36,7 +39,7 @@ public class HSplit extends Thread{
         try {
             Tuple t = in.getNextTuple();
             while(t != null){
-                int i = BMap.myhash(t.get(0));
+                int i = BMap.myhash(t.get(index));
                 outs[i].putNextTuple(t);
                 t = in.getNextTuple();
             }

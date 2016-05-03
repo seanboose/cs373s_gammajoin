@@ -34,7 +34,7 @@ public class HSplitTest {
         outs[2] = new Connector("out2");
         outs[3] = new Connector("out3");
         
-        HSplit hsplit = new HSplit(in, outs);
+        HSplit hsplit = new HSplit(in, outs, 0);
         
         Print p0 = new Print(outs[0]);
         Sink s1 = new Sink(outs[1]);
@@ -59,7 +59,7 @@ public class HSplitTest {
         outs[2] = new Connector("out2");
         outs[3] = new Connector("out3");
         
-        HSplit hsplit = new HSplit(in, outs);
+        HSplit hsplit = new HSplit(in, outs, 0);
         
         Sink s0 = new Sink(outs[0]);
         Print p1 = new Print(outs[1]);
@@ -84,7 +84,7 @@ public class HSplitTest {
         outs[2] = new Connector("out2");
         outs[3] = new Connector("out3");
         
-        HSplit hsplit = new HSplit(in, outs);
+        HSplit hsplit = new HSplit(in, outs, 0);
         
         Sink s0 = new Sink(outs[0]);
         Sink s1 = new Sink(outs[1]);
@@ -109,7 +109,7 @@ public class HSplitTest {
         outs[2] = new Connector("out2");
         outs[3] = new Connector("out3");
         
-        HSplit hsplit = new HSplit(in, outs);
+        HSplit hsplit = new HSplit(in, outs, 0);
         
         Sink s0 = new Sink(outs[0]);
         Sink s1 = new Sink(outs[1]);

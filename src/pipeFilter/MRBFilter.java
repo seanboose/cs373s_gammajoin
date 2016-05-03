@@ -42,7 +42,7 @@ public class MRBFilter extends Thread{
         int splits = bfilter_merge.length;
         
         SplitM splitm = new SplitM(m_splitm, splitm_bfilter);
-        HSplit hsplit = new HSplit(b_hsplit, hsplit_bfilter);
+        HSplit hsplit = new HSplit(b_hsplit, hsplit_bfilter, jk);
         
         BFilter[] bfilters = new BFilter[splits];
         for(int i=0; i<splits; ++i){

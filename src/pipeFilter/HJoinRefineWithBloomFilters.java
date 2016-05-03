@@ -21,10 +21,6 @@ public class HJoinRefineWithBloomFilters extends Thread {
     private ReadEnd in2;
     private WriteEnd write1;
     private WriteEnd write2;
-//    private WriteEnd out;
-//    private int key1;
-//    private int key2;
-//    private Relation r_joined;
 
     public HJoinRefineWithBloomFilters(Connector c1, Connector c2, int jk1, int jk2, Connector o) throws Exception{
         

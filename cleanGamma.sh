@@ -2,7 +2,7 @@
 
 echo "Cleaning Files..."
 
-rm -r out/*
+rm -r src/testOutput/*
 rm sortedCor.txt sortedOut.txt
 
 echo "Cleaning Finished"
